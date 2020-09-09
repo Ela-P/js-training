@@ -11,10 +11,10 @@ const user = {
     badhabits: 'no',
     namefriends: `'Alex', 'Roma', 'Ihar', 'Ivan', 'Oleg'`,
 };
-console.log(user.height);
+//console.log(user.height);
 
-//user.canSingSongs = 'yes';
+user.canSingSongs = 'yes';
 
-//delete user.namefriends;
+delete user.namefriends;
 
-//console.log(user);
+console.log(user);

@@ -8,19 +8,20 @@ const user = {
     name: 'Misha',
     height: 175,
     age: 33,
-    badHabits: '-',
+    badHabits: 'no',
     nameFriends: ['Alex', 'Roma', 'Ihar', 'Ivan', 'Oleg'],
 };
-if (badHabits = '-') {
-    console.log ('no')
-} else  {
-    console.log ('yes')
+
+if (badHabits = 'no') {
+    console.log ('no Habits')
+} else {
+    console.log ('yes Habits')
 };
 
-//console.log(user.height);
+console.log(user.height);
 
 user.canSingSongs = 'yes';
 
-delete user.namefriends;
+delete user.nameFriends;
 
 console.log(user);

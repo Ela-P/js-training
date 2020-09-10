@@ -8,11 +8,11 @@ const user = {
     name: 'Misha',
     height: 175,
     age: 33,
-    badHabits: 'no',
+    badHabits: true,
     nameFriends: ['Alex', 'Roma', 'Ihar', 'Ivan', 'Oleg'],
 };
 
-if (badHabits = 'no') {
+if (badHabits = true) {
     console.log ('no Habits')
 } else {
     console.log ('yes Habits')

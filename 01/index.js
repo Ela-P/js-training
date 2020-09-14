@@ -62,13 +62,28 @@
   
 //задание 4
 
-function isPalindrom(word) {
- const len = word.length;
-if (len == null || len == 0) {
-   return false;
- }
-  return true;
+//function isPalindrom(word) {
+ //const len = word.length;
+//if (len == null || len == 0) {
+  // return false;
+ //}
+ // return true;
     
-}
-isPalindrom("gvmhgf");
+//}
+//isPalindrom("madam");
 
+//function isPalindrom(word) {
+//  word = word.toLowerCase().replace(/\s/g,'');
+  //return word === word.split('').reverse().join('');
+//}
+//isPalindrom("madam");
+
+function isPalindrom(word) {
+  const len = Math.floor(word.lenght / 2);
+  for (let i = 0; 1 < len; i++)
+  if (word[i] !== word[word.lenght - i -1]) {
+    return false;
+  }
+  return true;
+}
+isPalindrom("Alex");

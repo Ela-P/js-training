@@ -98,7 +98,6 @@ function quadraticEquation(a, b, c) {
   let x1 = (-b + Math.sqrt(d)) / (2 * a),
       x2 = (-b - Math.sqrt(d)) / (2 * a);
       return [d, x1, x2];
-
 }
-quadraticEquation(9, 7, 5);
+quadraticEquation(0, 0, 0);
 

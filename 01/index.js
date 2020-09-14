@@ -87,3 +87,18 @@ function isPalindrom(word) {
   return true;
 }
 isPalindrom("Alex");
+
+
+//5 задание 
+
+function quadraticEquation(a, b, c) {
+  let discr = (a, b, c) => b * b - 4 * a * c;
+  let d = discr(a, b, c);
+  if (d < 0) return [d];
+  let x1 = (-b + Math.sqrt(d)) / (2 * a),
+      x2 = (-b - Math.sqrt(d)) / (2 * a);
+      return [d, x1, x2];
+
+}
+quadraticEquation(9, 7, 5);
+

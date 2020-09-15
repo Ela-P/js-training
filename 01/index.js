@@ -72,7 +72,7 @@ function isPalindrom(word) {
   let reverseUserWord = "";
   for (let i = word.length - 1; i >= 0; i--) {
     reverseUserWord += word[i]; 
-  } if (reverseUserWord = word) {
+  } if (reverseUserWord == word) {
       return true;
     } else {
       return false;

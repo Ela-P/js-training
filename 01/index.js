@@ -1,23 +1,23 @@
-//задание 1 -50/50
+//задание 1 
 
-//function fizzBuzz(n) {
-// for (let i = 1; i <= n; i++) {
-// if (i % 3 === 0 && i % 5 === 0) {
-//  console.log("fizzBuzz!")
-//} else if (i % 3 === 0) {
- // console.log ("fizz" )
- //} else if (i % 5 === 0) {
- // console.log ("Buzz")
- //} else {
-  // console.log(i)
- //}
-//}
-//}
+function fizzBuzz(n) {
+for (let i = 1; i <= n; i++) {
+ if (i % 3 === 0 && i % 5 === 0) {
+  console.log("fizzBuzz!")
+} else if (i % 3 === 0) {
+  console.log ("fizz" )
+ } else if (i % 5 === 0) {
+  console.log ("Buzz")
+ } else {
+   console.log(i)
+ }
+}
+}
 
 //fizzBuzz(10);
 
 
-//задание 2- 50/50
+//задание 2
 
 function toNumber(value) {
 const num = +value;
@@ -27,9 +27,9 @@ if (isNaN(value)) {
   return num;
 }
 }
-console.log(toNumber('1555'));
+//console.log(toNumber('1555'));
 
-console.log(toNumber('Number'));
+//console.log(toNumber('Number'));
 
 
 
@@ -68,31 +68,22 @@ console.log(toNumber('Number'));
   
 //задание 4
 
-//function isPalindrom(word) {
- //const len = word.length;
-//if (len == null || len == 0) {
-  // return false;
- //}
- // return true;
-    
-//}
-//isPalindrom("madam");
+function isPalindrom(word) {
+  let reverseUserWord = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    reverseUserWord += word[i]; 
+  } if (reverseUserWord = word) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
-//function isPalindrom(word) {
-//  word = word.toLowerCase().replace(/\s/g,'');
-  //return word === word.split('').reverse().join('');
-//}
-//isPalindrom("madam");
+console.log(isPalindrom("madam"));
+console.log(isPalindrom("Alex"));
 
-//function isPalindrom(word) {
- // const len = Math.floor(word.lenght / 2);
- // for (let i = 0; 1 < len; i++)
-  //if (word[i] !== word[word.lenght - i -1]) {
-   // return false;
- // }
-//  return true;
-//}
-//isPalindrom("Alex");
+
+
 
 
 //5 задание 

@@ -1,35 +1,36 @@
 //задание 1 -50/50
 
-function fizzBuzz(n) {
- for (let i = 1; i <= n; i++) {
- if (i % 3 === 0 && i % 5 === 0) {
-  console.log("fizzBuzz!")
- } else if (i % 3 === 0) {
-  console.log ("fizz" )
- }
-  else if (i % 5 === 0) {
-  console.log ("Buzz")
- } else {
-   console.log(i)
- }
-}
-}
+//function fizzBuzz(n) {
+// for (let i = 1; i <= n; i++) {
+// if (i % 3 === 0 && i % 5 === 0) {
+//  console.log("fizzBuzz!")
+//} else if (i % 3 === 0) {
+ // console.log ("fizz" )
+ //} else if (i % 5 === 0) {
+ // console.log ("Buzz")
+ //} else {
+  // console.log(i)
+ //}
+//}
+//}
 
-fizzBuzz(10);
+//fizzBuzz(10);
 
 
 //задание 2- 50/50
 
-//function toNumber(value) {
-    //const num = "1235";
-    //const number = +num;
-    //console.log(value);
-    
-  //      return num != "1235" ? null : 0
-    
-//}
+function toNumber(value) {
+const num = +value;
+if (isNaN(value)) {
+      return null;
+} else {
+  return num;
+}
+}
+console.log(toNumber('1555'));
 
-//toNumber(12548468546854);
+console.log(toNumber('Number'));
+
 
 
 

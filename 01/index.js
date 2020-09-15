@@ -1,16 +1,21 @@
 //задание 1 -50/50
 
-//function fizzBuzz(n) {
-// for (let i = 0; i <= n; i++) {
-// if (!(i % 3 === 0))
-//     console.log("fizz");
-// else if (!(i % 5 === 0))
-//     console.log ("Buzz");
-// else (!(i % 3 & 5 === 0))
-//     console.log ("fizzBuzz!");
-// }
-//}
-//fizzBuzz(23);
+function fizzBuzz(n) {
+ for (let i = 1; i <= n; i++) {
+ if (i % 3 === 0 && i % 5 === 0) {
+  console.log("fizzBuzz!")
+ } else if (i % 3 === 0) {
+  console.log ("fizz" )
+ }
+  else if (i % 5 === 0) {
+  console.log ("Buzz")
+ } else {
+   console.log(i)
+ }
+}
+}
+
+fizzBuzz(10);
 
 
 //задание 2- 50/50
@@ -78,26 +83,25 @@
 //}
 //isPalindrom("madam");
 
-function isPalindrom(word) {
-  const len = Math.floor(word.lenght / 2);
-  for (let i = 0; 1 < len; i++)
-  if (word[i] !== word[word.lenght - i -1]) {
-    return false;
-  }
-  return true;
-}
-isPalindrom("Alex");
+//function isPalindrom(word) {
+ // const len = Math.floor(word.lenght / 2);
+ // for (let i = 0; 1 < len; i++)
+  //if (word[i] !== word[word.lenght - i -1]) {
+   // return false;
+ // }
+//  return true;
+//}
+//isPalindrom("Alex");
 
 
 //5 задание 
 
-function quadraticEquation(a, b, c) {
-  let discr = (a, b, c) => b * b - 4 * a * c;
-  let d = discr(a, b, c);
-  if (d < 0) return [d];
-  let x1 = (-b + Math.sqrt(d)) / (2 * a),
-      x2 = (-b - Math.sqrt(d)) / (2 * a);
-      return [d, x1, x2];
-}
-quadraticEquation(0, 0, 0);
-
+//function quadraticEquation(a, b, c) {
+ // let discr = (a, b, c) => b * b - 4 * a * c;
+ // let d = discr(a, b, c);
+ // if (d < 0) return [d];
+  //let x1 = (-b + Math.sqrt(d)) / (2 * a),
+  //    x2 = (-b - Math.sqrt(d)) / (2 * a);
+  //    return [d, x1, x2];
+//
+//}

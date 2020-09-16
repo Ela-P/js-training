@@ -68,7 +68,7 @@ function convertFloor(floor) {
         }
     }
 }
-console.log(convertFloor(-3)); // -1
+//console.log(convertFloor(-3)); // -1
 
 //console.log(convertFloor(2)); // 3
 

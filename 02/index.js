@@ -57,15 +57,18 @@ function isEven(n) {
 //Задание 5
     
 function convertFloor(floor) {
-    for (let i = -14; i <= floor; i++) {
-        if (i === 1 && i === -1) {
-            console.log(0)
-        } else if (i === 13 && i === -13) {
-            console.log(12)
+    for (let i = -1; i >= -1; i++) 
+   {
+        if (floor === -1 && floor === 1) {
+            return 0;
+        } else if (floor === -13) {
+        return -12;
+     } else if (floor === 13) {
+        return 12;
         }
     }
 }
-//console.log(convertFloor(-1)); // -1
+console.log(convertFloor(-3)); // -1
 
 //console.log(convertFloor(2)); // 3
 

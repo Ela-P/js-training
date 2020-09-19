@@ -19,7 +19,7 @@ const user = {
     name: "Anton",
     email: "pitbool@mail.ru",
     phone: 375291232623,
-    //[id]: 1111,
+   // [id]: 111, - выдает ошибку
 };
 
 const newUser = Object.assign({}, user);
@@ -40,6 +40,8 @@ const circle = {
 
 
 //Задание 4
+//message.getMessage();
+//message.showMessage();
 
 const message = {
     text: "Hi" ,
@@ -51,6 +53,17 @@ const message = {
     }
 }
 
-//message.getMessage();
-//message.showMessage();
 
+//Задание 5
+
+const rectangle = {
+    hight: 20,
+    width: 10,
+    getArea() {
+        console.log(this.hight * this.width)
+    }
+}
+
+//console.log(rectangle.hight);
+//console.log(rectangle.width);
+//console.log(rectangle.getArea());

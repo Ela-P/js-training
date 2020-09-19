@@ -10,7 +10,9 @@ for (let key in car) {
 }
 
 
+
 // Задание 2 
+//console.log(newUser);
 
 const user = {
     name: "Anton",
@@ -21,4 +23,16 @@ const user = {
 
 const newUser = Object.assign({}, user);
 
-//console.log(newUser);
+
+
+//Задание 3
+
+const circle = {
+    radius: 2,
+    color: "red",
+    calculateCircumference: function() {
+         console.log(2 * Math.PI * this.radius)
+    }
+}
+
+//circle.calculateCircumference();

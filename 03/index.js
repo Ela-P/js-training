@@ -1,3 +1,4 @@
+//Из презентации
 //Задание 1 
 
 const car = {
@@ -36,3 +37,20 @@ const circle = {
 }
 
 //circle.calculateCircumference();
+
+
+//Задание 4
+
+const message = {
+    text: "Hi" ,
+    getMessage() {
+    alert(message.text = `I am message!`)
+    },
+    showMessage() {
+        alert(this.text)
+    }
+}
+
+//message.getMessage();
+//message.showMessage();
+

@@ -6,8 +6,8 @@ const car = {
     doors: 3,
 };
 for (let key in car) {
-   // alert(key);
-  //  alert(car[key])
+    // alert(key);
+    //  alert(car[key])
 }
 
 
@@ -19,7 +19,7 @@ const user = {
     name: "Anton",
     email: "pitbool@mail.ru",
     phone: 375291232623,
-   // [id]: 111, - выдает ошибку
+    // [id]: 111, - выдает ошибку
 };
 
 const newUser = Object.assign({}, user);
@@ -31,8 +31,8 @@ const newUser = Object.assign({}, user);
 const circle = {
     radius: 2,
     color: "red",
-    calculateCircumference: function() {
-         console.log(2 * Math.PI * this.radius)
+    calculateCircumference: function () {
+        console.log(2 * Math.PI * this.radius)
     }
 }
 
@@ -44,9 +44,9 @@ const circle = {
 //message.showMessage();
 
 const message = {
-    text: "Hi" ,
+    text: "Hi",
     getMessage() {
-    alert(message.text = `I am message!`)
+        alert(message.text = `I am message!`)
     },
     showMessage() {
         alert(this.text)
@@ -67,3 +67,19 @@ const rectangle = {
 //console.log(rectangle.hight);
 //console.log(rectangle.width);
 //console.log(rectangle.getArea());
+
+
+// Задание 6
+
+const obj = {
+    name: 20,
+};
+
+function isEmpty(obj) {
+    for (let key in obj) {
+    return false;
+}
+    return true;
+}
+
+//console.log(isEmpty(obj));

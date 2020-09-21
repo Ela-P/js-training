@@ -13,18 +13,18 @@ for (let key in car) {
 
 
 // Задание 2 
-//console.log(newUser);
+const id = Symbol(111);
 
 const user = {
     name: "Anton",
     email: "pitbool@mail.ru",
     phone: 375291232623,
-    // [id]: 111, - выдает ошибку
+    [id]: 111
 };
 
 const newUser = Object.assign({}, user);
 
-
+//console.log(newUser);
 
 //Задание 3
 
@@ -70,6 +70,7 @@ const rectangle = {
 
 
 // Задание 6
+//console.log(isEmpty(obj));
 
 const obj = {
     name: 20,
@@ -82,4 +83,6 @@ function isEmpty(obj) {
     return true;
 }
 
-//console.log(isEmpty(obj));
+
+//Задание 1 из телеграм 
+    

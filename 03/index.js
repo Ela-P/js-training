@@ -86,3 +86,27 @@ function isEmpty(obj) {
 
 //Задание 1 из телеграм 
     
+function Dog(name, breed, age) {
+    const numAge = Number(age);
+    this.name = name;
+    this.breed = breed;
+    this.numAge = age;
+
+    this.intro = function() {
+        console.log(`Woof! I am ${this.name}, and I am ${this.numAge}. I am ${this.breed}`)
+    }
+    this.bark = function() {
+        console.log(`Woof!`)
+    }
+    this.comeHere = function(word) {
+        let worda = word;
+        if (worda === this.name) {
+            console.log(`arf-arf`)
+    }
+}
+
+const Pit = new Dog("Pit", "pitbool", 5);
+
+console.log((new Dog).intro());
+console.log((new Dog).bark());
+console.log((new Dog).comeHere("Pit"));

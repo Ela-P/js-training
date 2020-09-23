@@ -18,4 +18,16 @@ document.body.append(div);
 //console.log(div);
 
 
+//Задание 2
+
+const myArray = new Array("Viktor", "Tatiana", "Eduard", "Michael", "Denis", "Peter", "Ann", "Dmitry",
+"Sergey", "Ivan", "Alan"); 
+const ol = document.createElement("ol");
+
+
+
+
+document.body.append(ol);
+console.log(ol);
+console.log(myArray);
 

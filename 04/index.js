@@ -23,11 +23,18 @@ document.body.append(div);
 const myArray = new Array("Viktor", "Tatiana", "Eduard", "Michael", "Denis", "Peter", "Ann", "Dmitry",
 "Sergey", "Ivan", "Alan"); 
 const ol = document.createElement("ol");
+for(let i = 0; i < arr.length; i++) {
+    let li = document.createElement('li');
+    li.append(i); 
+} if (i % 2 === 0) {
+    li.className = "even";
+} else {
+    li.className = "odd";
+}
 
 
 
-
-document.body.append(ol);
-console.log(ol);
-console.log(myArray);
+//document.body.append(ol);
+//console.log(ol);
+//console.log(myArray);
 

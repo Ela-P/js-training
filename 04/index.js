@@ -38,10 +38,23 @@ for (let i = 0; i < myArray.length; i++) {
     ol.append(li); 
 }
 
-
-
-
 document.body.append(ol);
 //console.log(ol);
 //console.log(myArray);
 
+
+//Задание 3
+
+
+function showMessage() {
+    const newDiv = document.createElement("div");
+    newDiv.className = "message";
+    newDiv.innerText = "Привет, я message";
+    newDiv.style.background = "grey";
+    newDiv.style.top = "100px";
+    newDiv.style.paddingLeft = "50px";
+
+}
+  document.body.append(newDiv)
+
+showMessage();

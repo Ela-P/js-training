@@ -24,12 +24,16 @@ const myArray = new Array("Viktor", "Tatiana", "Eduard", "Michael", "Denis", "Pe
 "Sergey", "Ivan", "Alan"); 
 const ol = document.createElement("ol");
 
-for(let i = 0; i < myArray.length; i++) {
+for (let i = 0; i < myArray.length; i++) {
     const li = document.createElement('li');
  if (i % 2 === 0) {
-    li.className = "even"
+    li.className = "even";
+    li.style.background = "green";
+    li.innerText = myArray[i];
 } else {
-    li.className = "odd"
+    li.className = "odd";
+    li.style.background = "blue";
+    li.innerText = myArray[i];
 }
     ol.append(li); 
 }

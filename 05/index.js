@@ -1,12 +1,12 @@
 
 
 const one = document.getElementById("one");
-const two =document.getElementById("two");
+const two = document.getElementById("two");
 
 const user = {
     name: "Nikita",
-    email: "privet@mail.ru",
-    password: "privet222.ru"
+    email: "111@ma.ru",
+    password: "111"
 }
 
 
@@ -28,4 +28,18 @@ two.addEventListener("input", (event) => {
     } else {
         event.target.classList.remove("invalid");
     }
+});
+
+
+one & two.addEventListener("input", function () {
+    if (one === !user.name & two === !user.password) {
+        const div = document.createElement("div");
+        div.innerText = `Вы ввели не верный пароль!`;
+        document.body.append(div);
+    } else {
+        const divNew = document.createElement("div");
+        divNew.innerText = `Hello, I  am ${user.name}`;
+        document.body.append(divNew);
+    }
+
 });

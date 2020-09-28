@@ -32,7 +32,7 @@ two.addEventListener("input", (event) => {
 
 
 one & two.addEventListener("input", function () {
-    if (one === !user.name & two === !user.password) {
+    if ((one.value === !user.name) || (two.value === !user.password)) {
         const div = document.createElement("div");
         div.innerText = `Вы ввели не верный пароль!`;
         document.body.append(div);
@@ -43,3 +43,5 @@ one & two.addEventListener("input", function () {
     }
 
 });
+
+

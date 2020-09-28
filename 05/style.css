@@ -1,0 +1,28 @@
+.view-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.view-input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #765dc4;
+    background-color: #b2ed90;
+    color: black;
+    
+}
+
+.view-button {
+    color: black;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #765dc4;
+    background-color: #f4fa77;
+    text-align: center; 
+}
+
+.invalid {
+    border: 5px solid red;
+  
+}

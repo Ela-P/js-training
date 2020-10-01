@@ -30,6 +30,7 @@ const formHelper = {
         value: "",
         valid: false,
         checkValidation() {
+            const regex = /^[0-9][A-Za-z0-9 -]*$/g;
             this.age.valid = this.age.value !== "";
         },
     },

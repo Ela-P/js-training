@@ -37,7 +37,8 @@ const formHelper = {
         value: "",
         valid: false,
         checkValidation() {
-            this.email.valid = this.email.value !== "";
+            const regex =/^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/g;
+            this.email.valid = regex.test(this.email.value);
         },
     },
     city: {

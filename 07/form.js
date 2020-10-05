@@ -4,17 +4,32 @@
 //слушатель кнопок списка
 
 const btn = document.getElementById("btn-register");
-const btn = document.getElementById("btn-login");
+const btn2 = document.getElementById("btn-login");
 
 //классы для показа (удаления)
 
-const delite_class = "delite";
-const show_class = "show";
+const delite_class = "Delite";
+const show_class = "Show";
  
 
-$('.btnLog a').on('click', function 
+btnL.addEventListener("click", (event) => {
+    if (event.which === btnR) {
+    classShowAdd();
+    }  else (event.which === btnL) {
+        classDeliteAdd()
+    }
+
+});
 
 
+btnR.addEventListener("click", (event) => {
+    if (event.which === btnR) {
+        classShowAdd();
+        }  else (event.which === btnL) {
+            classDeliteAdd()
+        }
+
+});
 
 
 

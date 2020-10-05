@@ -9,20 +9,26 @@
 </head>
 
 <body>
-    
+    <div class="form-list">
+        <ul class="tab-group">
+            <li class="btnReg"><a href="#formRegister"><button  class="click" id="btn-register"> Register </button></a></li>
+            <li class="btnLog"><a href="#loginForm"><button  class="click" id="btn-login"> Login </button></a></li>
+          </ul>
+
     <form class="view-form" name="register" id="formRegister" novalidate>
-        <input class="view-input" name="login" placeholder="Login" type="login" id="loginInput">
         <input class="view-input" name="name" placeholder="Name" type="name" id="nameInput">
-        <input class="view-input" name="age" placeholder="Age" type="age" id="ageInput">
         <input class="view-input" name="email" placeholder="Email" type="email" id="emailInput">
-        <input class="view-input" name="city" placeholder="City" type="City" id="cityInput">
         <input class="view-input" name="password" placeholder="Password" type="password" id="passwordInput">
         <input class="view-input" name="repeatPassword" placeholder="Repeat Password" type="RepeatPassword" id="repeatPassword">
         <button class="view-button" class="click" id="btn"> Register </button>
     </form>
 
-    
-
+    <form class="view-form" name="register" id="LoginForm" novalidate>
+        <input class="view-input" name="login" placeholder="Login" type="login" id="loginInput">
+        <input class="view-input" name="password" placeholder="Password" type="password" id="passwordInput">
+        <button class="view-button" class="click" id="btn"> Login </button>
+    </form>
+    </div>
     <script src="form.js"></script>
 </body>
 

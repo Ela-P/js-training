@@ -1,3 +1,38 @@
+//Переключатель форм
+
+
+//слушатель кнопок списка
+
+const btn = document.getElementById("btn-register");
+const btn = document.getElementById("btn-login");
+
+//классы для показа (удаления)
+
+const delite_class = "delite";
+const show_class = "show";
+ 
+
+$('.btnLog a').on('click', function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//предыдущий урок(repit)
 // обращение 
 
 const form = document.forms.register;

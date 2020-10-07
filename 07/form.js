@@ -1,63 +1,71 @@
-//Переключатель форм
 
-
-//слушатель кнопок списка
-
-const btn = document.getElementById("btn-register");
-const btn2 = document.getElementById("btn-login");
-
-//классы для показа (удаления)
-
-const delite_class = "Delite";
-const show_class = "Show";
- 
-
-btnL.addEventListener("click", (event) => {
-    if (event.which === btnR) {
-    classShowAdd();
-    }  else (event.which === btnL) {
-        classDeliteAdd()
-    }
-
-});
-
-
-btnR.addEventListener("click", (event) => {
-    if (event.which === btnR) {
-        classShowAdd();
-        }  else (event.which === btnL) {
-            classDeliteAdd()
-        }
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//предыдущий урок(repit)
-// обращение 
-
-const form = document.forms.register;
-const btn = document.getElementById("btn");
-
-//console.log(form);
 
 //класс присвоения
 
 const INVALID_CLASS = "invalid";
+
+
+const registerform = document.forms.register;
+const btn = document.getElementById("btn");
+
+const loginForm = document.getElementById("loginForm");
+const registerForm = document.getElementById("registerForm");
+
+
+const btnReg = document.getElementById("btnReg");
+const btnLog = document.getElementById("btnLog");
+
+const loginEmail = document.getElementById("loginInput");
+const loginPassword = document.getElementById("passwordInput");
+
+
+//setLoginFormActive();
+
+function setLoginFormActive() {
+    loginForm.style.display = "block"; 
+    registerForm.style.display = "none"; 
+    btnLog.classList.add("active-btn"); 
+    btnReg.classList.remove("active-btn"); 
+  
+    setDisabledButtonState();
+}
+
+function setRegisterFormActive() {
+    loginForm.style.display = "none"; 
+    registerForm.style.display = "block"; 
+    btnLog.classList.remove("active-btn");
+    btnReg.classList.add("active-btn"); 
+    btn.disabled = !formHelper.checkFormValid();
+}
+
+//login 
+btnLog.addEventListener("click", setLoginFormActive);
+
+btnReg.addEventListener("click", setRegisterFormActive);
+
+
+function setDisabledButtonState() {
+    if (loginEmail.value === "" || loginPassword.value === "") {
+        btnLog.disabled = true;
+    } else {
+        btnLog.disabled = false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // объект c валидацией
@@ -126,7 +134,7 @@ const formHelper = {
 
 // слушатели:
 //на форму-> передает из импутов в хелпер value & name
-form.addEventListener("input", (event) => {
+registerform.addEventListener("input", (event) => {
     const value = event.target.value;
     const name = event.target.name;
   
@@ -138,6 +146,7 @@ form.addEventListener("input", (event) => {
 
     classInvalidAdd (event.target, formHelper[name].valid); //(не) добавление класса валидности
 });
+
 
 
 // Присвоения класса валидации
@@ -152,7 +161,7 @@ function classInvalidAdd(domNode, isValid) {
 
 //Деф на кнопку
 
-form.addEventListener("submit", (event) => {
+registerform.addEventListener("submit", (event) => {
     event.preventDefault();
 
 

@@ -35,18 +35,21 @@ const arrUsers = [
 
 function makeTable(arrUsers) {
     const table = document.createElement('table');
-    for (let i = 0; i < arrUsers.length; i++) {
-            let row = document.createElement("tr");
+    for (let i = 0; i < arrUsers.lengt; i++) {
+            const row = document.createElement("tr");
+            const currentUser = arrUsers[i];
 
-        for (let j = 0; j < arrUsers[i].length; j++) {
-            let cell = document.createElement("td");
-            td.innerHTML = arrUsers[i][j];
-            tr.appendChild(cell);
+        for (let key in currentUser) {
+            const cell = document.createElement("td");
+            cell.innerHTML = currentUser[key];
+
+            row.appendChild(cell);
         }
 
         table.appendChild(row);
     }
-    return table;
+    return document.body.appendChild(table);
 }
 
+makeTable([arrUsers]);
 

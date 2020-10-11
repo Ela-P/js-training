@@ -92,10 +92,10 @@ makeTable(arrUsers);
 const button = document.getElementById('delBut');
  button.addEventListener("click", removeFormArr);
 
- function removeFormArr() {
-  for (const i = arrUsers.length; i--;) {
-    if (arrUsers[i] === val) {
-      arrUsers.splice(i, 1);
-    }
+ function removeFormArr(arrUsers, val) {
+    for (const i = arrUsers.length -1; i >= 0; i--) {
+      if (arrUsers[i] === val) {
+        arrUsers.splice(i, 1);
+      }
 }
 }

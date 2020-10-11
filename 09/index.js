@@ -78,7 +78,7 @@ function makeTable(arrUsers) {
 
         table.appendChild(row);
         const tdDelete = document.createElement('td');
-        tdDelete.innerHTML = '<button>Delete</button>';
+        tdDelete.innerHTML = '<button id="delBut">Delete</button>';
         row.appendChild(tdDelete);
     }
     return document.body.appendChild(table);
@@ -88,3 +88,14 @@ makeTable(arrUsers);
 
 //console.log([arrUsers]);
 //console.log(arrUsers);
+
+const button = document.getElementById('delBut');
+ button.addEventListener("click", removeFormArr);
+
+ function removeFormArr() {
+  for (const i = arrUsers.length; i--;) {
+    if (arrUsers[i] === val) {
+      arrUsers.splice(i, 1);
+    }
+}
+}
